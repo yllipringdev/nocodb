@@ -16,3 +16,7 @@ export const modalSizes = {
     height: 'min(90vh, 864px)',
   },
 }
+
+export const isUnicodeEmoji = (emoji: string) => {
+  return !!emoji?.match(/(\p{Emoji}|\p{Extended_Pictographic})/gu)
+}
